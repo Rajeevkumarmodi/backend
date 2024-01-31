@@ -1,9 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const router = require("./routes/userRoutes");
 const app = express();
 
 const PORT = process.env.PORT;
+
+app.use(express.json());
+app.use("/student", router);
 
 // database connection
 

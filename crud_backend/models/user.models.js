@@ -10,8 +10,8 @@ const studentSchema = new mongoose.Schema({
     unique: true,
     required: true,
   },
-  class: {
-    type: string,
+  className: {
+    type: String,
     required: true,
   },
   classRoll: {
